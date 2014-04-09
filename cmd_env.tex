@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       COMMANDS AND ENVIRONMENTS                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 			COMMANDS											  %
+% Partial derivative 	: 		\pd{}{}
+% Regular derivative 	:		\od{}{}
+% Integral				:		\integral{}{}
+% Norm					:		\norm{}
+% Limits					:		\limit{}
+%		(array inside : l \\)
+% Sum					:		\Sum{}{}
+%		(array inside : l \\)
+%
+% 			ENVIRONMENTS										  %
+% Accolade				:		\begin{accolade} \end{accolade}
+% Multiple Equations		:		\begin{eqarray} \end{eqarray}
+% 			(array inside : r & c & l \\)
+% Multiple Equations	 	:		\begin{beqarray} \end{beqarray}
+% 			with accolade (array inside : r & c & l \\)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 			COMMANDS											  %
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\od}[2]{\frac{d #1}{d #2}}
+\newcommand{\integral}[2]{\int\limits_{#1}^{#2}}
+\newcommand{\norm}[1]{\| #1 \|}
+\newcommand{\limit}[1]{\lim\limits_{\begin{array}{l}#1\end{array}}}
+\newcommand{\Sum}[2]{\sum\limits_{\begin{array}{l}#1\end{array}}^ {\begin{array}{l}#2\end{array}}}
+% 			ENVIRONMENTS										  %
+\newenvironment{accolade}{\left\{}{\right.}
+\newenvironment{eqarray}{\begin{array}{r c l}}{\end{array}}
+\newenvironment{beqarray}{\begin{accolade}\begin{array}{r c l}}{\end{array}\end{accolade}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
