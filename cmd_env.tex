@@ -17,6 +17,8 @@
 % 			(array inside : r & c & l \\)
 % Multiple Equations	 	:		\begin{beqarray} \end{beqarray}
 % 			with accolade (array inside : r & c & l \\)
+% Top Lefthand corner 	:		\lexp{}
+%				index
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 			COMMANDS											  %
 \newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
@@ -25,6 +27,7 @@
 \newcommand{\norm}[1]{\| #1 \|}
 \newcommand{\limit}[1]{\lim\limits_{\begin{array}{l}#1\end{array}}}
 \newcommand{\Sum}[2]{\sum\limits_{\begin{array}{l}#1\end{array}}^ {\begin{array}{l}#2\end{array}}}
+\newcommand{\lexp}[1]{{}^{#1}\!}
 % 			ENVIRONMENTS										  %
 \newenvironment{accolade}{\left\{}{\right.}
 \newenvironment{eqarray}{\begin{array}{r c l}}{\end{array}}
